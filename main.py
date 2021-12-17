@@ -1,7 +1,4 @@
-# TEE PELI TÄHÄN
 import pygame
-from pygame.constants import K_r
-# floor: f, wall: w, teleport: t, player: p, enemy: e, button: b, goal: v
 
 
 class Game:
@@ -15,6 +12,7 @@ class Game:
     def start_new_game(self):
         self.naytto.fill((0, 0, 0))
 
+        # floor: f, wall: w, teleport: t, player: p, enemy: e, button: b, goal: v
         self.world_map = [['w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w'],
                           ['w', 'p', 'f', 'f', 'f', 'f', 'f', 'f', 't1', 'w', 't4', 'w'],
                           ['w', 'f', 't3', 'f', 'f', 'w', 'f', 'f', 'f', 'w', 'f', 'w'],
